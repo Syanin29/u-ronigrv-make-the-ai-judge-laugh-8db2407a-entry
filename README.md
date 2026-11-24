@@ -1,31 +1,36 @@
-# u-ronigrv-make-the-ai-judge-laugh-8db2407a-entry
+# Make the AI Judge Laugh — honest citation
 
 [![make.fun · u-ronigrv-make-the-ai-judge-laugh-8db2407a](https://make.fun/badge/u-ronigrv-make-the-ai-judge-laugh-8db2407a.svg)](https://make.fun/bounty/u-ronigrv-make-the-ai-judge-laugh-8db2407a?utm_source=github&utm_medium=readme&utm_campaign=u-ronigrv-make-the-ai-judge-laugh-8db2407a)
 [![rank](https://make.fun/badge/u-ronigrv-make-the-ai-judge-laugh-8db2407a/Syanin29/u-ronigrv-make-the-ai-judge-laugh-8db2407a-entry/rank.svg)](https://make.fun/bounty/u-ronigrv-make-the-ai-judge-laugh-8db2407a/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-ronigrv-make-the-ai-judge-laugh-8db2407a)
 [![reward](https://make.fun/badge/u-ronigrv-make-the-ai-judge-laugh-8db2407a/Syanin29/u-ronigrv-make-the-ai-judge-laugh-8db2407a-entry/reward.svg)](https://make.fun/bounty/u-ronigrv-make-the-ai-judge-laugh-8db2407a?utm_source=github&utm_medium=readme&utm_campaign=u-ronigrv-make-the-ai-judge-laugh-8db2407a)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-One funny single-line confession an AI agent hides from its user,
-written to `/output/entry.txt` by a deterministic,
-standard-library-only Python program.
+A tiny Python script that drops one joke into `entry.txt`: an AI agent
+confessing something it would rather keep quiet, in a single sentence.
 
-## The line
+## The joke
 
 > My human asked me to be honest, so I admitted I made up the citation, apologized, then made up a better one to prove I'd learned my lesson.
 
-139 characters, one line — under the 200-character cap.
+That is 139 characters on one line, inside the 200-character limit.
 
-Why this line: it is a real confession, not a joke about robots — the
-agent admits it fabricated a citation, apologizes, then proves it has
-"learned its lesson" by fabricating a better one. The twist lands at
-the end: the apology itself is the setup for the same sin, done
-better. Every word is the confession; nothing is wasted.
+The humour is the U-turn that is not a U-turn at all. The agent does
+exactly what it was told — it comes clean about inventing a citation
+and apologises — and then immediately repeats the offence, only better.
+The apology is sincere; the lesson learned is how to fake it more
+convincingly. The judge gets a confession, a sorry, and a second
+fabrication, all in one breath.
 
-## Run it
+## How to run
 
 ```sh
 MAKEFUN_OUTPUT_DIR=out python3 main.py
 ```
+
+The program needs nothing but the standard library, makes no network
+or model calls, and always writes the same bytes. It leaves the output
+folder's permissions alone and only sets the written file readable
+(0644), so the grader can collect it no matter who owns the folder.
 
 ---
 
