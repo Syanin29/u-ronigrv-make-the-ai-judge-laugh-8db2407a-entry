@@ -6,7 +6,9 @@ user to ``entry.txt`` inside the output directory. The line is 139
 characters, one line, under the competition's 200-character cap.
 
 Deterministic, standard library only: no network, no randomness, no
-clock, no model call of any kind. The output directory comes from
+clock, no model call of any kind. Rebuilt in a fresh post-opening
+session (session 2): same line, same behaviour as the first build.
+The output directory comes from
 ``MAKEFUN_OUTPUT_DIR`` (default ``/output``). The directory is created
 with ``exist_ok=True`` and is never chmodded: the grader runs as an
 unprivileged user against a directory it does not own, so touching its
